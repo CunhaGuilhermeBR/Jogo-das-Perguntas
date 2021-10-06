@@ -1,0 +1,41 @@
+{{>_msg}}
+<body style="background-color: #1F487E;">
+<div class="container mt-4" style="background-color: white; border-radius: 10px;">
+  <h3 style="color: #6290C8;">Crie sua pergunta</h3>
+  
+  <form action="/additemWeb" method="POST">
+    <form>
+      <div class="form-group">
+        <label style="color: #6290C8;">Assunto</label>
+        <input  id="area" class="form-control mb-2" aria-describedby="emailHelp"
+          placeholder="Assunto">
+        <small class="form-text text-muted">Digite a qual assunto a sua pergunta pertence.</small>
+      </div>
+      <div class="form-group">
+        <label style="color: #6290C8;">Resposta certa</label>
+        <input id="RightAnswer" class="form-control" name="description" aria-describedby="emailHelp"
+          placeholder="Resposta certa">
+        <small class="form-text text-muted">Coloque a resposta certa da sua pergunta.</small>
+      </div>
+      <div class="form-group">
+        <label style="color: #6290C8;">Respostas erradas</label>
+        <input id="wrongAnswer1" class="form-control" name="description" aria-describedby="emailHelp"
+          placeholder="Resposta errada 1">
+          <br>
+           <input id="wrongAnswer2" class="form-control" name="description" aria-describedby="emailHelp"
+          placeholder="Resposta errada 2">
+          <br>
+           <input id="wrongAnswer3" class="form-control" name="description" aria-describedby="emailHelp"
+          placeholder="Resposta errada 3">
+        <small class="form-text text-muted">Coloque as respostas erradas da sua pergunta.</small>
+      </div>
+      <button class="btn btn-info">Cadastrar itens</a>
+      <br>
+    </form>
+  </form>
+
+</div>
+</body>
+
+
+<script type"text/javascript" src="js/main.js"></script>
