@@ -22,6 +22,10 @@ var questionSchema = new Schema({
         type: String,
         require: true
     },
+    question: {
+        type: String,
+        require: true
+    }
 })
 
 module.exports = mongoose.model('Question', questionSchema)

@@ -10,7 +10,7 @@ const app = express()
 
 //Configurações
   // Conecta-se ao banco mongoDB
-  //connectDB()
+  connectDB()
 
   if (process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'))
