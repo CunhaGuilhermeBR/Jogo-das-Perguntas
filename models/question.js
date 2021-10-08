@@ -25,6 +25,10 @@ var questionSchema = new Schema({
     question: {
         type: String,
         require: true
+    },
+    difficulty: {
+        type:String,
+        require: true
     }
 })
 

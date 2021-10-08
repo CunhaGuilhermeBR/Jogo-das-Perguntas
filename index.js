@@ -28,6 +28,7 @@ const app = express()
   // Static files
   app.use(express.static('views/images'))
   app.use(express.static('views/'))
+ // Session
  
 
 const PORT = process.env.PORT || 3000

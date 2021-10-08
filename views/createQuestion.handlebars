@@ -1,4 +1,3 @@
-{{>_msg}}
 <body style="background-color: #1F487E;">
 <div class="container mt-4" style="background-color: white; border-radius: 10px;">
   <h3 style="color: #6290C8;">Crie sua pergunta</h3>
@@ -6,19 +5,9 @@
   <form action="/cadQuestion" method="POST">
     <form>
        <label style="color: #6290C8;">Assunto</label>
-      <div class="form-group" id="area" name="area" >
-  <input class="w3-radio" type="radio" name="area" value="Geografia" checked>
-<label>Geografia</label>
-
-<input class="w3-radio" type="radio" name="area" value="Artes">
-<label>Artes</label>
-
-<input class="w3-radio" type="radio" name="area" value="Ciências">
-<label>Ciências</label>
-
-<input class="w3-radio" type="radio" name="area" value="Lazer" >
-<label>Lazer</label>
-</div>
+      {{>_selectArea}}
+<label style="color: #6290C8;">Dificuldade</label>
+      {{>_selectDifficulty}}
 <div class="form-group">
         <label style="color: #6290C8;">Pergunta</label>
         <input id="question" class="form-control" name="question" aria-describedby="emailHelp"

@@ -3,13 +3,7 @@ var Question = require('../models/question')
 
 var functions = {
     createQuestion: function(req, res){
-       console.log(req.body.question)
-       console.log(req.body.area)
-       console.log(req.body.rightAnswer)
-       console.log(req.body.wrongAnswer1)
-       console.log(req.body.wrongAnswer2)
-       console.log(req.body.wrongAnswer3)
-        if(!req.body.question || !req.body.area || !req.body.rightAnswer || !req.body.wrongAnswer1 || !req.body.wrongAnswer2 || !req.body.wrongAnswer3)
+        if(!req.body.difficulty || !req.body.area || !req.body.rightAnswer || !req.body.wrongAnswer1 || !req.body.wrongAnswer2 || !req.body.wrongAnswer3)
         res.render('menu', {error: true, msg: 'Preencha todos os campos.'})
         else{
             var newQuestion = Question ({
@@ -18,7 +12,8 @@ var functions = {
                 wrongAnswer1: req.body.wrongAnwser1,
                 wrongAnswer2: req.body.wrongAnswer2,
                 wrongAnswer3: req.body.wrongAnswer3,
-                question: req.body.question
+                question: req.body.question,
+                difficulty: req.body.difficulty
 
             })
             newQuestion.save(function (err, newQuestion) {
@@ -29,9 +24,11 @@ var functions = {
                     res.render('menu', { success: true, msg: 'Pergunta cadastrada com sucesso.' })
                 }
             })
-
         }
-    }
+    },
+    makeQuestion: function (req,res){
+        Question.find()
+    },
 }
 
 module.exports = functions
