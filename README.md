@@ -11,4 +11,6 @@ Ainda não possui uma versão para utilização.
 ## Histórico de versões
 
 * 0.1.1
-    * Início: criação da Main na view. Ajustes iniciais 
+    * Início: criação da Main na view. Ajustes iniciais. 
+*  0.1.2
+    * Banco de dados: cadastro criado e funcionando.
