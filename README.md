@@ -14,3 +14,5 @@ Ainda não possui uma versão para utilização.
     * Início: criação da Main na view. Ajustes iniciais. 
 *  0.1.2
     * Banco de dados: cadastro criado e funcionando.
+*  0.1.3
+    * Menu finalizado. Criação das partial de seleção de dificuldade e assunto. Tutorial criado.
