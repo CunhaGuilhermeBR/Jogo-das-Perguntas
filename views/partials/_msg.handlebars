@@ -1,6 +1,15 @@
+<div style="text-align: center;">
 {{#if success}}
+<div class="alert alert-success">{{msg}}</div>
+{{/if}}
+{{#if right}}
 <div class="alert alert-success">{{msg}}</div>
 {{/if}}
 {{#if error}}
 <div class="alert alert-danger">{{msg}}</div>
 {{/if}}
+{{#if wrong}}
+<div class="alert alert-danger">{{msg}}</div>
+{{/if}}
+</div>
+
