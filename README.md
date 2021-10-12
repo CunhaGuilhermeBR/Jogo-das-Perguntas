@@ -16,5 +16,7 @@ Ainda não possui uma versão para utilização.
     * Banco de dados: cadastro criado e funcionando.
 *  0.1.3
     * Menu finalizado. Criação das partial de seleção de dificuldade e assunto. Tutorial criado.
-*  1.0
+*  0.2
     * Seleção de pergunta e embaralhamento de respostas feito. Pequenas correções no código.
+*  1.0
+    * Versão inicial finalizada. O jogo já pode ser jogado, mas ainda precisa de melhorias.
