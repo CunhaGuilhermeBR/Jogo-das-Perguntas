@@ -1,0 +1,19 @@
+<body style="background-color:#1F487E ;  margin-bottom:50px;">
+	<div class="container mt-4" style="background-color: white; border-radius: 10px;">
+		<h1 style="color: #6290C8;text-align: center;">O jogo das perguntas</h1>
+		<form>
+			<hr style="color: #1F487E">
+				<div class="form-group" style="text-align: center;">
+					<h2 style="color: #6290C8;">{{question}}</h2>
+					<br>
+					{{#each answers}}
+					<input class="w3-radio" type="radio" name="answer" checked>
+					<label>{{this}}</label>
+					{{/each}}
+					<br>
+					<button class="btn btn-info">Responder</button>
+				</div>
+		</form>
+
+	</div>
+</body>

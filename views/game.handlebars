@@ -1,7 +1,7 @@
 <body style="background-color:#1F487E ;  margin-bottom:50px;">
 <div class="container mt-4" style="background-color: white; border-radius: 10px;">
     <h1 style="color: #6290C8;text-align: center;">O jogo das perguntas</h1>
-    <form>
+    <form action="/getQuestion" method="POST">
        <hr style="color: #1F487E">
         <h3 style="color: #6290C8;text-align: center;">Pontuação atual:{{score}}</h1>
          <div class="container-mt2" style="text-align: center;">
@@ -10,7 +10,7 @@
               {{>_selectDifficulty}}
                 <h3 style="color: #6290C8;text-align: center;">Assunto</h1>
               {{>_selectArea}}
-              <a class="btn btn-info" href="/getQuestion">Pegar pergunta</a>
+              <button class="btn btn-info">Pegar pergunta</button>
          </div>
     </form>
 

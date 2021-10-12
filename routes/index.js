@@ -15,9 +15,9 @@ router.get('/createQuestion', (req,res) => {res.render('createQuestion')})
 //@route GET /
 router.get('/howToPlay', (req,res) => res.render('howToPlay'))
 
-//@desc Rota que redireciona para o tutorial do jogo
-//@route GET /
-router.get('/getQuestion', actions.makeQuestion)
+//@desc Rota que pega uma pergunta do banco de dados
+//@route POST /
+router.post('/getQuestion', actions.makeQuestion)
 
 //@desc Rota que redireciona para a tela do jogo e define a pontuação inicial como 0.
 //@route GET /
